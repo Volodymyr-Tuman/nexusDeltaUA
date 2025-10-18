@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    background-color: white;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", sans-serif;
+    color: #222;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#intro, #games, #why, #discord-section {
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#intro p, #games p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+#games ul {
+    list-style-type: "🎯 ";
+    margin-left: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+#why h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff7f7;
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffe5e5;
+}
+
+#discord-section {
+    text-align: center;
+    background: linear-gradient(135deg, #ff0000, #ff6600);
+    color: white;
+}
+
+#discord-section iframe {
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: white;
+    color: #ff0000;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #ff6600;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 3px solid #ff0000;
+}
+
+#theme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s;
+    background: none;
+    border: none;
+}
+
+#theme:hover {
+    transform: scale(1.1);
+}
+
+#themeIcon {
+    width: 30px;
+}
+
+header {
+    background: linear-gradient(90deg, #ff0000, #ff6600);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    top: 0;
+    z-index: 10;
+    transition: background 0.5s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    animation: spinLogo 6s linear infinite alternate;
+}
+
+@keyframes spinLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
+
+#theme {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+#theme:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+#themeIcon {
+    width: 25px;
+}
+
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
