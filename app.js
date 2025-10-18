@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 const imgTheme = document.getElementById("themeIcon");
-
+//привіт
 
 function theme() {
     if (body.style.backgroundColor === "white" || body.style.backgroundColor === "") {
@@ -11,3 +11,4 @@ function theme() {
         imgTheme.setAttribute("src", "sun.png");
     }
 }
+
