@@ -19,7 +19,7 @@ header {
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-#intro, #games, #why, #discord-section {
+#intro, #games, #why, #discord-section, #rules {
     margin: 50px auto;
     padding: 30px;
     border-radius: 20px;
@@ -40,6 +40,7 @@ header {
     margin-left: 20px;
     line-height: 1.8;
     font-size: 18px;
+    
 }
 
 #why h2 {

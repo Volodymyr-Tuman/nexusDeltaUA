@@ -1,6 +1,6 @@
 const body = document.querySelector("body")
 const imgTheme = document.getElementById("themeIcon")
-const allDiv = document.querySelectorAll("#intro, #games, #why")
+const allDiv = document.querySelectorAll("#intro, #games, #why, #rules")
 const DivWhy = document.querySelectorAll(".feature-card")
 
 function theme() {
