@@ -4,6 +4,11 @@ body {
     transition: background-color 0.3s;
     font-family: "Segoe UI", sans-serif;
     color: #222;
+    
+}
+
+body:hover{
+    cursor: url('normal.png'), auto;
 }
 
 header {
@@ -18,6 +23,10 @@ header {
     text-transform: uppercase;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+a, button{
+        cursor: url('link.png'), auto;
+
+}
 
 #intro, #games, #why, #discord-section, #rules {
     margin: 50px auto;
@@ -27,6 +36,8 @@ header {
     background-color: #fff;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transition: background-color 0.3s;
+    cursor: url('link.png'), auto;
+    
 }
 
 
